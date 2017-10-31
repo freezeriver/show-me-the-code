@@ -1,5 +1,5 @@
 # encoding = utf-8
-
+# 萌新初来乍到学习一发的代码
 from PIL import Image,ImageDraw,ImageFont,ImageColor
 
 def add_num(img):
@@ -13,6 +13,6 @@ def add_num(img):
 
 
 if __name__ == '__main__':
-    image = Image.open('test.jpg')
-    add_num(image)
+    pic = Image.open('test.jpg')
+    add_num(pic)
 
