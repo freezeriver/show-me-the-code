@@ -3,7 +3,7 @@
 from PIL import Image,ImageDraw,ImageFont,ImageColor
 
 def add_num(img):
-    draw_img = ImageDraw.Draw(img)        # 创建一个画布
+    draw_img = ImageDraw.Draw(img)                                       # 创建一个画布
     myfont = ImageFont.truetype('C:/windows/fonts/Arial.ttf', size=40)   # 创建一个字体对象
     fillcolor = ImageColor.colormap.get('red')                                # 设置字体填充颜色
     width,height = img.size
