@@ -21,9 +21,9 @@ def generate(n):
 def save_to_db(codes):
     conn = pymysql.connect(host='localhost',port=3306,user='root',passwd='xxxxxxxx',db='test')    # 创建连接
     cursor = conn.cursor()                                              #创建一个游标
-    sql="insert into tb1(id,code) values(%s,%s)"                    # sql语句
+    sql="insert into tb1(id,code) values(%s,%s)"                        # sql语句
     for i in range(len(codes)):
-        cursor.execute(sql,(i,codes[i]))                                #执行
+        cursor.execute(sql,(i,codes[i]))                                #执行sql语句
     conn.commit()
     conn.close()
 
